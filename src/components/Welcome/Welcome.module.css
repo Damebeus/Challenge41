@@ -1,0 +1,24 @@
+@media (max-width: 414px) {
+    
+.container {
+    max-width: 412px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.imagen{
+    text-align: center;
+   position: absolute;
+   bottom: 0px;
+}
+.imagen img{
+   /*  position: relative; */
+    width: 450px;
+    overflow: hidden;
+    left: -80px;
+
+  
+}
+
+}
