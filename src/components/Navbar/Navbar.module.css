@@ -1,23 +1,22 @@
 @media (max-width: 414px) {
     .container{
+    display: flex;
+    justify-content: center;
     min-height: 8vh;
     width: 100vw;
     background-color: #000000c5;
-    position: fixed;
     z-index: 1;
     top: 0px; 
-    display: flex;
-    justify-content: center;
+    position: fixed;
 }
 .titulo{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 2rem;
-    
+    font-size: 2.4rem;
     color: #fff;
     font-family: monospace;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .back{
     color: #fff;
@@ -26,7 +25,7 @@
 }
 .back button{
     font-size: 1.6rem;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #fff;
     text-decoration: none;
     background-color: transparent;
