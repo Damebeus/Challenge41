@@ -28,7 +28,7 @@
 .boton{
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+   /*  margin-top: 20%; */
 }
 .boton button{
     background-color: rgb(0, 0, 0);
