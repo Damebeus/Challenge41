@@ -9,6 +9,9 @@ const DetailsFav = () => {
       <div className={style.search}>
         <input type='text' placeholder='Cantidad de...' />
       </div>
+      <div className={style.guardar}>
+        <button>Guardar</button>
+      </div>
     </div>
   );
 };

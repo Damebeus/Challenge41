@@ -4,7 +4,7 @@ import style from "./Navbar.module.css";
 const UnarrowNavBar = () => {
   return (
     <div className={style.container}>
-      <div className={style.titulo}>CryptoFav</div>
+      <div className={style.titulo}>Mis criptomonedas</div>
     </div>
   );
 };
