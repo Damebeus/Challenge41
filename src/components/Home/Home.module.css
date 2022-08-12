@@ -1,13 +1,13 @@
 .agregar{
   margin-top: 180vw;
-  margin-left: 80vw;
+  margin-left: 75vw;
   
 }
 .agregar button{
     background-color: #fff;
     border: none;
     border-radius: 10px;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: bold;
     color: #000;
     cursor: pointer;
