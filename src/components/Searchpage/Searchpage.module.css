@@ -8,6 +8,7 @@
     border: 2px solid #000;
     border-radius: 5px;
     font-size: 1.4rem;
+    height: 50px;
     background-color: transparent;
 }
 .search input:focus{
