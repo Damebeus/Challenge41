@@ -43,15 +43,15 @@
 }
 
 
-/* .imagen{
+.imagen{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     bottom: 0;
    background-color: aquamarine;
    
-} */
+}
 .imagen p{
     font-size: 1rem;
     color: rgb(0, 0, 0);
