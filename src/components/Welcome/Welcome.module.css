@@ -1,11 +1,25 @@
 @media (max-width: 414px) {
     
 .container {
-    max-width: 412px;
-    max-height: 100%;
     display: flex;
     flex-direction: column;
-
+   
+}
+.titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 40%;
+    margin-bottom: 1rem;
+    font-family: monospace
+}
+.subtitulo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 .imagen{
     text-align: center;
@@ -14,11 +28,10 @@
 }
 .imagen img{
    /*  position: relative; */
-    width: 450px;
+   position: relative;
+    width: 550px;
     overflow: hidden;
     left: -80px;
-
-  
 }
 
 }
