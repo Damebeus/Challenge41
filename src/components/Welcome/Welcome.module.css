@@ -4,8 +4,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 880px;
-    width: 414px;
+    max-height: 880px;
+    max-width: 414px;
   
 }
 
