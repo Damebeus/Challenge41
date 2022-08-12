@@ -1,7 +1,9 @@
 import React from "react";
-import inferior from "./inferior.png";
 import { Link } from "react-router-dom";
 import style from "./Welcome.module.css";
+
+import cuarenta from "./cuaren.png";
+import inferior from "./inferior.png";
 
 const Welcome = () => {
   return (
@@ -13,14 +15,14 @@ const Welcome = () => {
         <div className={style.subtitulo}>
           <h2>Search your favorite crypto currency</h2>
         </div>
-
-        <div className={style.imagen}>
-          {/* <img src={inferior} alt='' /> */}
-        </div>
         <div className={style.boton}>
           <Link to='/home'>
             <button>Lets go!</button>
           </Link>
+        </div>
+
+        <div className={style.imagen}>
+          <img src={cuarenta} alt='' />
         </div>
       </div>
     </div>
