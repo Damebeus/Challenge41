@@ -1,6 +1,7 @@
+@media (max-width: 414px) {
 .agregar{
-  margin-top: 170vw;
-  margin-left: 75vw;
+  margin-top: 175vw;
+  margin-left: 77vw;
   
 }
 .agregar button{
@@ -11,4 +12,5 @@
     font-weight: bold;
     color: #000;
     cursor: pointer;
+}
 }
