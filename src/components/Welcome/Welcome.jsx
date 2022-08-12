@@ -1,7 +1,7 @@
 import React from "react";
 import inferior from "./inferior.png";
-import style from "./Welcome.module.css";
 import { Link } from "react-router-dom";
+import style from "./Welcome.module.css";
 
 const Welcome = () => {
   return (
@@ -15,7 +15,7 @@ const Welcome = () => {
         </div>
 
         <div className={style.imagen}>
-          <img src={inferior} alt='' />
+          {/* <img src={inferior} alt='' /> */}
         </div>
         <div className={style.boton}>
           <Link to='/home'>

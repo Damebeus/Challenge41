@@ -6,15 +6,23 @@
     position: fixed;
     z-index: 100000000;
     top: 0px; 
+    display: flex;
+    justify-content: center;
 }
 .titulo{
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 2rem;
+    
     color: #fff;
     font-family: monospace;
     margin-top: 10px;
 }
-
+.back{
+    color: #fff;
+    position: absolute;
+    font-size: 3rem;
+    left: 10px;
+}
 }

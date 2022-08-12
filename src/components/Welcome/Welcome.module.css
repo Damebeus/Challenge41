@@ -49,16 +49,10 @@
 
 
 .imagen{
+    position: absolute;
     text-align: center;
-   position: absolute;
    bottom: -5px;
-}
-.imagen img{
-   /*  position: relative; */
-   position: relative;
-    width: 550px;
-    overflow: hidden;
-    left: -90px;
+   overflow: hidden;
 }
 
 
