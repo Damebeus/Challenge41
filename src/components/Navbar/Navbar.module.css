@@ -1,6 +1,6 @@
 @media (max-width: 414px) {
     .container{
-    height: 7vh;
+    min-height: 7vh;
     width: 100vw;
     background-color: #000000c5;
     position: fixed;
