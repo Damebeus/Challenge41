@@ -1,11 +1,5 @@
 @media (max-width: 414px) {
     
-.global{
-    width: 100vw;
-    height: 100vh;
-   
-    
-}
 
 .container {
     display: flex;
@@ -18,14 +12,14 @@
     color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 15%;
-    margin-bottom: 1rem;
+   
     font-family: monospace
 }
 .subtitulo{
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-bottom: 1rem;
+
     font-family: monospace
 }
 
