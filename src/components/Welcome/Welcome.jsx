@@ -10,14 +10,14 @@ const Welcome = () => {
     <div className={style.global}>
       <div className={style.container}>
         <div className={style.titulo}>
-          <h1>Welcome</h1>
+          <h1>Bienvenido</h1>
         </div>
         <div className={style.subtitulo}>
-          <h2>Search your favorite crypto currency</h2>
+          <h2>Busca tu Cripto Moneda favorita</h2>
         </div>
         <div className={style.boton}>
           <Link to='/home'>
-            <button>Lets go!</button>
+            <button>Ir a la pagina!</button>
           </Link>
         </div>
 

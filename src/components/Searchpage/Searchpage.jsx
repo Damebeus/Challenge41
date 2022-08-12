@@ -6,7 +6,7 @@ import style from "./Searchpage.module.css";
 const Searchpage = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar redireccion={"/home"} />
       <div className={style.search}>
         <Searchbar />
       </div>
