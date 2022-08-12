@@ -4,8 +4,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-height: 896vmin;
-    width: 100vmin;
+    max-height: 896px;
+    width: 100vw;
   
 }
 
@@ -74,16 +74,15 @@
     }
    25%, 75% {
     opacity: 0.4;
-    
+
     }
    }
    @keyframes flash {
     0%, 50%, 100% {
-        opacity: 1;
-       
+    opacity: 1;
 }
 25%, 75% {
-
+       
     opacity: 0.4;
     }
    }
