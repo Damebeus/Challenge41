@@ -13,19 +13,23 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
     font-size: 2.4rem;
     color: #fff;
     font-family: monospace;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 .back{
     color: #fff;
     position: absolute;
     left: 10px;
+  
 }
 .back button{
     font-size: 1.6rem;
-    margin-top: 25px;
+    margin-top: 30px;
     color: #fff;
     text-decoration: none;
     background-color: transparent;
