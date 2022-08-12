@@ -13,7 +13,7 @@ const Welcome = () => {
           <h1>Bienvenido</h1>
         </div>
         <div className={style.subtitulo}>
-          <h2>Busca tu Cripto Moneda favorita</h2>
+          <h2>Busca tus Criptomonedas favoritas</h2>
         </div>
         <div className={style.boton}>
           <Link to='/home'>
