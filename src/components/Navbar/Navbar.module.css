@@ -1,0 +1,20 @@
+@media (max-width: 414px) {
+    .container{
+    height: 7vh;
+    width: 100vw;
+    background-color: #000000c5;
+    position: fixed;
+    z-index: 100000000;
+    top: 0px; 
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-family: monospace;
+    margin-top: 10px;
+}
+
+}
