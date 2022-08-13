@@ -10,7 +10,7 @@ const DetailsFav = () => {
         <h2>Moneda</h2>
       </div>
       <div className={style.search}>
-        <input type='text' placeholder='Cantidad de MONEDA...' />
+        <input type='number' placeholder='Cantidad de MONEDA...' />
       </div>
       <div className={style.guardar}>
         <Link to='/home'>

@@ -24,7 +24,7 @@ const Welcome = () => {
         <div className={style.imagen}>
           <img src={cuarenta} alt='' />
           <div>
-            <p> ®Todos los derechos reservados</p>
+            <p>Todos los derechos reservados®</p>
           </div>
         </div>
       </div>

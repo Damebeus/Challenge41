@@ -7,9 +7,6 @@ const Searchpage = () => {
   return (
     <div>
       <Navbar redireccion={"/home"} />
-      <div className={style.titulo}>
-        <h1>DAI</h1>
-      </div>
 
       <div className={style.search}>
         <Searchbar />
