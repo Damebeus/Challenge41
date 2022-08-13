@@ -1,8 +1,21 @@
 @media (max-width: 414px) {
+
+    .titulo {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: 100px;
+        margin-bottom: -120px;
+        display: flex;
+        justify-content: center;
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+    
     .search{
         display: flex;
         justify-content: center;
         margin-top: 120px;
+        margin-bottom: -40px;
     }
     .search input{
         border: 2px solid #000;

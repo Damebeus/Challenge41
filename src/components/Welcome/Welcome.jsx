@@ -10,7 +10,7 @@ const Welcome = () => {
     <div className={style.global}>
       <div className={style.container}>
         <div className={style.titulo}>
-          <h1>Bienvenido</h1>
+          <h1>CryptoFav</h1>
         </div>
         <div className={style.subtitulo}>
           <h2>Busca tus Criptomonedas favoritas</h2>
