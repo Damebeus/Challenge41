@@ -34,7 +34,7 @@
     .guardar{
         display: flex;
         justify-content: center;
-        margin-top: 60vh;
+        margin-top: 50vh;
     }
     .guardar button{
         border: 1px solid #000;
@@ -51,7 +51,7 @@
     @media (max-width: 375px) {
 
     .guardar{
-        margin-top: 50vh;
+        margin-top: 40vh;
     }
 
     }

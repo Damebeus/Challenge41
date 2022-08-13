@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-
+import { Link, useHistory } from "react-router-dom";
 import style from "./DetailsFav.module.css";
 const DetailsFav = () => {
   return (
@@ -13,7 +13,9 @@ const DetailsFav = () => {
         <input type='text' placeholder='Cantidad de MONEDA...' />
       </div>
       <div className={style.guardar}>
-        <button>Guardar</button>
+        <Link to='/home'>
+          <button>Guardar</button>
+        </Link>
       </div>
     </div>
   );
