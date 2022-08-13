@@ -14,7 +14,7 @@ const DetailsFav = () => {
       </div>
       <div className={style.guardar}>
         <Link to='/home'>
-          <button>Guardar</button>
+          <button>Guardar en favoritos</button>
         </Link>
       </div>
     </div>
