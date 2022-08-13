@@ -10,6 +10,10 @@ const Home = () => {
       <Navbar />
 
       <div className={style.monedas}>
+        <div className={style.subtitulo}>
+          <p>Nombre</p>
+          <p>Cantidad</p>
+        </div>
         <div className={style.detalles}>
           <h2>BTC</h2>
           <div className={style.cantidad}>
