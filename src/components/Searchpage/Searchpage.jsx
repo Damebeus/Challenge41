@@ -7,8 +7,29 @@ const Searchpage = () => {
   return (
     <div>
       <Navbar redireccion={"/home"} />
+      <div className={style.titulo}>
+        <h1>DAI</h1>
+      </div>
+
       <div className={style.search}>
         <Searchbar />
+      </div>
+      <div className={style.monedas}>
+        <Link to='/favoritos'>
+          <div className={style.detalles}>
+            <h2>BTC</h2>
+          </div>
+        </Link>
+        <Link to='/favoritos'>
+          <div className={style.detalles}>
+            <h2>DAI</h2>
+          </div>
+        </Link>
+        <Link to='/favoritos'>
+          <div className={style.detalles}>
+            <h2>ETH</h2>
+          </div>
+        </Link>
       </div>
     </div>
   );
