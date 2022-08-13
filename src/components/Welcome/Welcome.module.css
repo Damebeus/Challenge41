@@ -90,3 +90,14 @@
     animation-name: flash;
    }
 }
+
+@media (max-width: 375px) {
+    .imagen{display: none;}
+
+    .boton{
+        margin-top: 30%;
+    }
+
+
+
+}
