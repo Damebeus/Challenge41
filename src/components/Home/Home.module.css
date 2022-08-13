@@ -56,6 +56,10 @@
     align-items: center;
     justify-content: flex-start;
   }
+  .cantidad button {
+    border: none;
+    background-color: transparent;
+  }
   .quitar {
     position: absolute;
     right: 10px;
@@ -63,5 +67,7 @@
     color: red;
     align-items: center;
     font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
   }
 }

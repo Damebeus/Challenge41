@@ -19,21 +19,27 @@ const Home = () => {
           <div className={style.cantidad}>
             <h3>$20.508</h3>
           </div>
-          <RiCloseCircleLine className={style.quitar} />
+          <button className={style.quitar}>
+            <RiCloseCircleLine />
+          </button>
         </div>
         <div className={style.detalles}>
           <h2>ETH</h2>
           <div className={style.cantidad}>
             <h3>$7.508</h3>
           </div>
-          <RiCloseCircleLine className={style.quitar} />
+          <button className={style.quitar}>
+            <RiCloseCircleLine />
+          </button>
         </div>
         <div className={style.detalles}>
           <h2>DAO</h2>
           <div className={style.cantidad}>
             <h3>$508</h3>
           </div>
-          <RiCloseCircleLine className={style.quitar} />
+          <button className={style.quitar}>
+            <RiCloseCircleLine />
+          </button>
         </div>
       </div>
 
