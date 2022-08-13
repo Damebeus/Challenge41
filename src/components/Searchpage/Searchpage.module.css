@@ -1,44 +1,66 @@
 @media (max-width: 414px) {
-
-    .titulo{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #000;
-        display: flex;
-        justify-content: center;
-        margin-top: 20%;
-        margin-bottom: -30%;
-    }
-.search{
+  .titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
     display: flex;
     justify-content: center;
-    margin-top: 120px;
-}
-.search input{
+    margin-top: 20%;
+    margin-bottom: -30%;
+  }
+  .subtitulo {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .subtitulo p {
+    margin-left: 25px;
+  }
+  /*  las medidas puestas estan pensadas ya que ninguna criptomoneda supera los 7 digitos en su lectura */
+  .precio {
+    position: relative;
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .precio h3 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin-left: 150px;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+  }
+  .search input {
     border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.4rem;
-    height: 50px;
+    height: 40px;
+    width: 100%;
     background-color: transparent;
-}
-.search input:focus{
+  }
+  .search input:focus {
     outline: none;
-}
-.search input::placeholder{
+  }
+  .search input::placeholder {
     padding-left: 5px;
-}
+  }
 
-.monedas{
+  .monedas {
     margin-top: 15%;
   }
-.detalles{
+  .detalles {
     border-top: #000 solid 2px;
     border-bottom: #000 solid 2px;
     display: flex;
-    
-   
   }
-  .detalles h2{
+  .detalles h2 {
     font-size: 2.2rem;
     font-weight: bold;
     color: #000;
@@ -47,6 +69,4 @@
     margin-left: 15px;
     width: 20%;
   }
-
-
 }
