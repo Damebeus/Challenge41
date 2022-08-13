@@ -4,19 +4,16 @@
     max-height: 870px;
   }
   .agregar {
-    position: absolute;
-    margin-top: 85vw;
-    margin-left: 77vw;
+    display: flex;
+    justify-content: center;
   }
-  .agregar button {
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 4.5rem;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
-    bottom: 0;
+  .agregar h2 {
+    color: #1bd682;
+    font-size: 1.4rem;
+  }
+  .agregar svg {
+    position: relative;
+    top: 4px;
   }
   .subtitulo {
     display: flex;
@@ -66,11 +63,5 @@
     color: red;
     align-items: center;
     font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .agregar {
-    margin-top: 160vw;
   }
 }

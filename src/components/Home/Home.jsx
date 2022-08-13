@@ -39,9 +39,10 @@ const Home = () => {
 
       <div className={style.agregar}>
         <Link to='/añadir'>
-          <button>
+          <h2>
             <MdOutlineAddCircleOutline />
-          </button>
+            Añadir a favoritos
+          </h2>
         </Link>
       </div>
     </div>
