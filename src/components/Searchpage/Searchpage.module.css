@@ -10,11 +10,11 @@
   }
   .subtitulo {
     display: flex;
-    width: 80%;
+    width: 75%;
     justify-content: space-between;
   }
   .subtitulo p {
-    margin-left: 25px;
+    margin-left: 20px;
   }
   /*  las medidas puestas estan pensadas ya que ninguna criptomoneda supera los 7 digitos en su lectura */
   .precio {
