@@ -36,7 +36,7 @@ const Searchpage = () => {
           <div className={style.detalles}>
             <h2>ETH</h2>
             <div className={style.precio}>
-              <h3>$2,402</h3>
+              <h3>$2,402 </h3>
             </div>
           </div>
         </Link>
