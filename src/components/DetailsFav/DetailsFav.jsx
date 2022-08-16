@@ -1,15 +1,39 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { detailClean, getCoin } from "../../redux/actions";
-
+import { detailClean, getCoin, postFavcoin } from "../../redux/actions";
 import style from "./DetailsFav.module.css";
+import axios from "axios";
 
 const DetailsFav = () => {
+  const history = useHistory();
   const dispatch = useDispatch();
   const { ticker } = useParams();
+
+  const [input, setInput] = useState({
+    cantidad: "",
+  });
+
+  function handleSubmit(ev) {
+    ev.preventDefault();
+
+    dispatch(
+      postFavcoin({
+        ticker: detail.ticker,
+        coin: detail.coin,
+        amount: parseFloat(ev.target.cantidad.value),
+      })
+    );
+    history.push("/home");
+  }
+  function handleChange(ev) {
+    setInput({
+      ...input,
+      [ev.target.cantidad]: ev.target.value,
+    });
+  }
 
   useEffect(() => {
     dispatch(getCoin(ticker));
@@ -28,17 +52,22 @@ const DetailsFav = () => {
       <div className={style.titulo}>
         <h2>{detail.coin}</h2>
       </div>
-      <div className={style.search}>
-        <input type='number' placeholder={`Cantidad de ${detail.coin}...`} />
-      </div>
-      <div className={style.logo}>
-        <img src={detail.logo} alt={detail.coin} width='150' height='150' />
-      </div>
-      <div className={style.guardar}>
-        <Link to='/home'>
-          <button>Guardar en favoritos</button>
-        </Link>
-      </div>
+      <form onSubmit={handleSubmit}>
+        <div className={style.search}>
+          <input
+            type='number'
+            name='cantidad'
+            onChange={(ev) => handleChange(ev)}
+            placeholder={`Cantidad de ${detail.coin}...`}
+          />
+        </div>
+        <div className={style.logo}>
+          <img src={detail.logo} alt={detail.coin} width='150' height='150' />
+        </div>
+        <div className={style.guardar}>
+          <button type='submit'> Guardar en favoritos</button>
+        </div>
+      </form>
     </div>
   ) : (
     <div>

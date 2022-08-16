@@ -49,11 +49,15 @@ export function getFavcoin() {
 
 export function postFavcoin(payload) {
   return async function (dispatch) {
+    console.log(payload, "vo tranquilo sho nervioso");
     const response = await axios.post(
       "https://challenge42.herokuapp.com/coin",
-      { payload }
+      payload
     );
-    return response;
+    return dispatch({
+      type: "POST_FAVCOIN",
+      payload: response.data,
+    });
   };
 }
 export function deleteFavcoin(id) {
