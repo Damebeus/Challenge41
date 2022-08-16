@@ -1,9 +1,20 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Searchbar from "../Searchbar/Searchbar";
+import { getAllCoins } from "../../redux/actions.js";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import style from "./Searchpage.module.css";
+
 const Searchpage = () => {
+  const dispatch = useDispatch();
+  const allCoins = useSelector((state) => state.coins);
+
+  useEffect(() => {
+    dispatch(getAllCoins());
+  }, []);
+
   return (
     <div>
       <Navbar redireccion={"/home"} />
@@ -18,25 +29,11 @@ const Searchpage = () => {
         </div>
         <Link to='/favoritos'>
           <div className={style.detalles}>
-            <h2>BTC</h2>
-            <div className={style.precio}>
-              <h3>$24,537</h3>
+            <div className={style.nombre}>
+              {allCoins && allCoins.map((elm) => <h2>{elm.coin}</h2>)}
             </div>
-          </div>
-        </Link>
-        <Link to='/favoritos'>
-          <div className={style.detalles}>
-            <h2>DAI</h2>
             <div className={style.precio}>
-              <h3>$327.7</h3>
-            </div>
-          </div>
-        </Link>
-        <Link to='/favoritos'>
-          <div className={style.detalles}>
-            <h2>ETH</h2>
-            <div className={style.precio}>
-              <h3>$2,402 </h3>
+              {allCoins && allCoins.map((elm) => <h2>{elm.prices.USD}</h2>)}
             </div>
           </div>
         </Link>

@@ -16,12 +16,13 @@
   .subtitulo p {
     margin-left: 20px;
   }
-  /*  las medidas puestas estan pensadas ya que ninguna criptomoneda supera los 7 digitos en su lectura */
+
   .precio {
     position: relative;
     display: flex;
-    width: 150px;
+    /*   background-color: yellowgreen; */
     align-items: center;
+    flex-direction: column;
     justify-content: flex-start;
   }
   .precio h3 {
@@ -59,13 +60,15 @@
     border-top: #000 solid 2px;
     border-bottom: #000 solid 2px;
     display: flex;
+    /* justify-content: center; */
+    background-color: rgb(135, 61, 61);
   }
   .detalles h2 {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #000;
     margin: 0;
-    padding: 5px;
+    /*    padding: 5px; */
     margin-left: 15px;
     width: 20%;
   }
