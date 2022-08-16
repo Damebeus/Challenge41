@@ -21,11 +21,6 @@ const DetailsFav = () => {
 
   const detail = useSelector((state) => state.detailcoin);
 
-  /*  const history = useHistory();
-  const goBack = () => {
-    history.goBack();
-  } */
-
   return (
     <div>
       <Navbar redireccion={"/añadir"} />
@@ -36,7 +31,9 @@ const DetailsFav = () => {
       <div className={style.search}>
         <input type='number' placeholder={`Cantidad de ${detail.coin}...`} />
       </div>
-
+      <div className={style.logo}>
+        <img src={detail.logo} alt={detail.coin} width='150' height='150' />
+      </div>
       <div className={style.guardar}>
         <Link to='/home'>
           <button>Guardar en favoritos</button>

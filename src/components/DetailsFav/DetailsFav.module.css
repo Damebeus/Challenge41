@@ -13,7 +13,12 @@
   .titulo h2 {
     position: absolute;
   }
-
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: -150px;
+  }
   .search {
     display: flex;
     justify-content: center;
