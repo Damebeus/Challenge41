@@ -20,19 +20,12 @@
   .precio {
     position: relative;
     display: flex;
-    /*   background-color: yellowgreen; */
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    width: 60%;
   }
-  .precio h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    margin-left: 150px;
-  }
+
   .search {
     display: flex;
     justify-content: center;
@@ -61,7 +54,6 @@
     border-bottom: #000 solid 2px;
     display: flex;
     /* justify-content: center; */
-    background-color: rgb(135, 61, 61);
   }
   .detalles h2 {
     font-size: 1.7rem;
@@ -71,5 +63,9 @@
     /*    padding: 5px; */
     margin-left: 15px;
     width: 20%;
+  }
+  .nombre {
+    background-color: yellow;
+    width: 40%;
   }
 }

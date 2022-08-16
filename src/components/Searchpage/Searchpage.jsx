@@ -33,7 +33,7 @@ const Searchpage = () => {
               {allCoins && allCoins.map((elm) => <h2>{elm.coin}</h2>)}
             </div>
             <div className={style.precio}>
-              {allCoins && allCoins.map((elm) => <h2>{elm.prices.USD}</h2>)}
+              {allCoins && allCoins.map((elm) => <h2>{elm.prices}</h2>)}
             </div>
           </div>
         </Link>
