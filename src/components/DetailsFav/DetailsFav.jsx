@@ -29,12 +29,14 @@ const DetailsFav = () => {
   return (
     <div>
       <Navbar redireccion={"/añadir"} />
+      <div key={detail.ticker}></div>
       <div className={style.titulo}>
-        <h2>Moneda</h2>
+        <h2>{detail.coin}</h2>
       </div>
       <div className={style.search}>
-        <input type='number' placeholder='Cantidad de MONEDA...' />
+        <input type='number' placeholder={`Cantidad de ${detail.coin}...`} />
       </div>
+
       <div className={style.guardar}>
         <Link to='/home'>
           <button>Guardar en favoritos</button>

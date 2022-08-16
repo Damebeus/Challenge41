@@ -12,7 +12,7 @@ function App() {
           <Route exact path='/' component={Welcome} />
           <Route exact path='/home' component={Home} />
           <Route exact path='/añadir' component={Searchpage} />
-          <Route exact path='/favoritos' component={DetailsFav} />
+          <Route exact path='/favoritos/:ticker' component={DetailsFav} />
         </Switch>
       </BrowserRouter>
     </div>

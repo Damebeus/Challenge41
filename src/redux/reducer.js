@@ -14,7 +14,6 @@ function rootReducer(state = initialState, action) {
         detailcoin: action.payload,
       };
     case GET_ALL_COINS:
-      console.log("2dddddooo");
       return {
         ...state,
         coins: action.payload,

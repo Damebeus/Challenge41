@@ -32,6 +32,7 @@ const Searchpage = () => {
           {allCoins.map((coin) => (
             <CardCripto
               key={coin.ticker}
+              ticker={coin.ticker}
               coin={coin.coin}
               prices={coin.prices}
             />

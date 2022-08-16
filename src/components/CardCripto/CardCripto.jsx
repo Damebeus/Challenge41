@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const CardCripto = ({ coin, ticker, prices }) => {
   return (
     <div className={style.monedas}>
-      {/*  */}
       <Link to={`/favoritos/${ticker}`}>
         <div className={style.detalles}>
           <div className={style.nombre}>
