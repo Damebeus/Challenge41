@@ -21,7 +21,7 @@ const DetailsFav = () => {
 
   const detail = useSelector((state) => state.detailcoin);
 
-  return (
+  return detail ? (
     <div>
       <Navbar redireccion={"/añadir"} />
       <div key={detail.ticker}></div>
@@ -39,6 +39,10 @@ const DetailsFav = () => {
           <button>Guardar en favoritos</button>
         </Link>
       </div>
+    </div>
+  ) : (
+    <div>
+      <h2>Cargando...</h2>
     </div>
   );
 };
