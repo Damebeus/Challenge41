@@ -49,7 +49,6 @@ export function getFavcoin() {
 
 export function postFavcoin(payload) {
   return async function (dispatch) {
-    console.log(payload, "vo tranquilo sho nervioso");
     const response = await axios.post(
       "https://challenge42.herokuapp.com/coin",
       payload
@@ -63,8 +62,14 @@ export function postFavcoin(payload) {
 export function deleteFavcoin(id) {
   return async function (dispatch) {
     const response = await axios.delete(
-      `https://challenge42.herokuapp.com/coin/${id}`
+      `https://challenge42.herokuapp.com/coin/delete/${id}`
     );
     return response;
   };
 }
+export const deleteState = (payload) => {
+  return {
+    type: "DELETE_STATE",
+    payload,
+  };
+};

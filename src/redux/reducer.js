@@ -22,6 +22,7 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         detailcoin: [],
+        favoritos: [],
       };
     case "GET_FAVCOIN":
       return {
@@ -36,7 +37,11 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
       };
-
+    case "DELETE_STATE":
+      return {
+        ...state,
+        favoritos: state.favoritos.filter((e) => e.id !== action.payload),
+      };
     default:
       return state;
   }

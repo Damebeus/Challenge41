@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import style from "./Favoritos.module.css";
 import { Link } from "react-router-dom";
 import { RiCloseCircleLine } from "react-icons/ri";
-import { deleteFavcoin, getCoin } from "../../redux/actions";
+import { deleteFavcoin, deleteState, getCoin } from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const Favoritos = ({ ticker, amount, id }) => {
@@ -12,7 +12,11 @@ const Favoritos = ({ ticker, amount, id }) => {
     dispatch(getCoin(ticker));
   }, [ticker]);
 
-  const detail = useSelector((state) => state.coin);
+  const detail = useSelector((state) => state.detailcoin);
+  function handleDelete() {
+    dispatch(deleteFavcoin(id));
+    dispatch(deleteState(id));
+  }
 
   return (
     <div className={style.monedas}>
@@ -20,11 +24,11 @@ const Favoritos = ({ ticker, amount, id }) => {
         <div className={style.nombre}>
           <h2>{ticker}</h2>
         </div>
-        <div className={style.precio}>
+        <div className={style.cantidad}>
           <h2>$ {amount * detail.prices}</h2>{" "}
           {/* multiplicacion de cripto x dolar */}
         </div>
-        <button className={style.quitar}>
+        <button onClick={handleDelete} className={style.quitar}>
           <RiCloseCircleLine />
         </button>
       </div>

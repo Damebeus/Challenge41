@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar/UnarrowNavBar";
 import style from "./Home.module.css";
 import { MdOutlineAddCircleOutline } from "react-icons/md";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import Favoritos from "../Favoritos/Favoritos";
+import { useDispatch, useSelector } from "react-redux";
+import { getFavcoin } from "../../redux/actions";
+
 const Home = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getFavcoin());
+  }, [dispatch]);
+
+  const monedasFavoritas = useSelector((state) => state.favoritos);
+
   return (
     <div className={style.container}>
       <Navbar />
@@ -14,7 +26,7 @@ const Home = () => {
           <p>Nombre</p>
           <p>Cantidad</p>
         </div>
-        <div className={style.detalles}>
+        {/*  <div className={style.detalles}>
           <h2>DAO</h2>
           <div className={style.cantidad}>
             <h3>$508</h3>
@@ -22,7 +34,12 @@ const Home = () => {
           <button className={style.quitar}>
             <RiCloseCircleLine />
           </button>
-        </div>
+        </div> */}
+      </div>
+      <div className={style.favorito}>
+        {monedasFavoritas.map((coin) => (
+          <Favoritos ticker={coin.ticker} amount={coin.amount} id={coin.id} />
+        ))}
       </div>
 
       <div className={style.agregar}>

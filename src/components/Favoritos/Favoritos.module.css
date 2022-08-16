@@ -1,0 +1,43 @@
+@media (max-width: 414px) {
+  .detalles {
+    border-top: #000 solid 2px;
+    border-bottom: #000 solid 2px;
+    display: flex;
+    margin-top: 20px;
+  }
+  .nombre h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 5px;
+    margin-left: 15px;
+    width: 20%;
+  }
+  .cantidad {
+    position: relative;
+    display: flex;
+    width: 150px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .cantidad h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+  .quitar {
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    color: red;
+    align-items: center;
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+  }
+}

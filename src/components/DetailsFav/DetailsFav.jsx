@@ -57,6 +57,7 @@ const DetailsFav = () => {
           <input
             type='number'
             name='cantidad'
+            step='0.000000001'
             onChange={(ev) => handleChange(ev)}
             placeholder={`Cantidad de ${detail.coin}...`}
           />
