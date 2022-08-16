@@ -10,8 +10,10 @@
   }
   .subtitulo {
     display: flex;
-    width: 70%;
+    width: 75%;
     justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: -10px;
   }
   .subtitulo p {
     margin-left: 20px;
@@ -36,42 +38,8 @@
   .search input::placeholder {
     padding-left: 5px;
   }
-
-  .monedas {
-    margin-top: 15%;
-  }
-  .detalles {
+  .renderizado {
     border-top: #000 solid 2px;
-    border-bottom: #000 solid 2px;
-    display: flex;
-  }
-
-  .nombre {
-    width: 40%;
-  }
-  .nombre h2 {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #000;
-    margin: 0;
-    margin-top: 20px;
-    width: 100%;
-    margin-left: 15px;
-  }
-  .precio {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 60%;
-  }
-  .precio h2 {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #000;
-    margin: 0;
-    margin-left: 60px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }

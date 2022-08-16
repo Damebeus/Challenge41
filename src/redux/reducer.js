@@ -19,6 +19,11 @@ function rootReducer(state = initialState, action) {
         ...state,
         coins: action.payload,
       };
+    case "DETAIL_CLEAN":
+      return {
+        ...state,
+        detailcoin: [],
+      };
     case "GET_FAVCOIN":
       return {
         ...state,

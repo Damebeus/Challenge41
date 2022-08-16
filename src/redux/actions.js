@@ -28,6 +28,12 @@ export function getAllCoins() {
     }
   };
 }
+export function detailClean(payload) {
+  return {
+    type: "DETAIL_CLEAN",
+    payload,
+  };
+}
 
 export function getFavcoin() {
   return async function (dispatch) {

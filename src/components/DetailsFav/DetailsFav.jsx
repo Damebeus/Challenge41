@@ -1,8 +1,31 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Link, useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { detailClean, getCoin } from "../../redux/actions";
+
 import style from "./DetailsFav.module.css";
+
 const DetailsFav = () => {
+  const dispatch = useDispatch();
+  const { ticker } = useParams();
+
+  useEffect(() => {
+    dispatch(getCoin(ticker));
+
+    return () => {
+      dispatch(detailClean());
+    };
+  }, [dispatch, ticker]);
+
+  const detail = useSelector((state) => state.detailcoin);
+
+  /*  const history = useHistory();
+  const goBack = () => {
+    history.goBack();
+  } */
+
   return (
     <div>
       <Navbar redireccion={"/añadir"} />
