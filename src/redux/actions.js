@@ -73,3 +73,10 @@ export const deleteState = (payload) => {
     payload,
   };
 };
+
+export const searchCoin = (payload) => {
+  return {
+    type: "SEARCH_COIN",
+    payload,
+  };
+};

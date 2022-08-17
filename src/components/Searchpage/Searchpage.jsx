@@ -10,7 +10,7 @@ import style from "./Searchpage.module.css";
 
 const Searchpage = () => {
   const dispatch = useDispatch();
-  const allCoins = useSelector((state) => state.coins);
+  const allCoins = useSelector((state) => state.coinstoshow);
 
   useEffect(() => {
     dispatch(getAllCoins());

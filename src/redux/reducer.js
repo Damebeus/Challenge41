@@ -4,6 +4,7 @@ const initialState = {
   detailcoin: [],
   favoritos: [],
   coins: [],
+  coinstoshow: [],
 };
 
 function rootReducer(state = initialState, action) {
@@ -17,6 +18,7 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         coins: action.payload,
+        coinstoshow: action.payload,
       };
     case "DETAIL_CLEAN":
       return {
@@ -41,6 +43,13 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         favoritos: state.favoritos.filter((e) => e.id !== action.payload),
+      };
+    case "SEARCH_COIN":
+      return {
+        ...state,
+        coinstoshow: state.coins.filter((e) =>
+          e.coin.toLowerCase().includes(action.payload.toLowerCase())
+        ),
       };
     default:
       return state;

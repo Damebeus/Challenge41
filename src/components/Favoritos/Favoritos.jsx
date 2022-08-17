@@ -25,8 +25,11 @@ const Favoritos = ({ ticker, amount, id }) => {
           <h2>{ticker}</h2>
         </div>
         <div className={style.cantidad}>
-          {/*  <h2>$ {amount * detail.prices}</h2> */} <h2>{amount}</h2>
-          {/*       <h3>{detail.prices}</h3> */}
+          <h2>
+            ${" "}
+            {amount /* * detail.prices */
+              .toFixed(2)}
+          </h2>
           {/* multiplicacion de cripto x dolar */}
         </div>
         <button onClick={handleDelete} className={style.quitar}>
