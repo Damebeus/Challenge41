@@ -26,15 +26,6 @@ const Home = () => {
           <p>Nombre</p>
           <p>Cantidad</p>
         </div>
-        {/*  <div className={style.detalles}>
-          <h2>DAO</h2>
-          <div className={style.cantidad}>
-            <h3>$508</h3>
-          </div>
-          <button className={style.quitar}>
-            <RiCloseCircleLine />
-          </button>
-        </div> */}
       </div>
       <div className={style.favorito}>
         {monedasFavoritas.map((coin) => (

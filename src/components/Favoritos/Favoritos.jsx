@@ -26,7 +26,6 @@ const Favoritos = ({ ticker, amount, id }) => {
         </div>
         <div className={style.cantidad}>
           <h2>
-            ${" "}
             {amount /* * detail.prices */
               .toFixed(2)}
           </h2>
