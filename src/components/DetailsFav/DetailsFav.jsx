@@ -58,6 +58,7 @@ const DetailsFav = () => {
             type='number'
             name='cantidad'
             step='0.000000001'
+            max='999999999'
             onChange={(ev) => handleChange(ev)}
             placeholder={`Cantidad de ${detail.coin}...`}
           />
